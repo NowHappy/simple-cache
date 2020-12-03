@@ -24,4 +24,11 @@ public class Product {
 
     Integer categoryNo;
 
+    public void updateProduct(Product product) {
+        this.brandName = product.getBrandName();
+        this.productName = product.getProductName();
+        this.productPrice = product.getProductPrice();
+        this.categoryNo = product.getCategoryNo();
+    }
+
 }

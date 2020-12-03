@@ -24,4 +24,10 @@ public class Category {
         this.categoryName = name + "-" + this.categoryName;
     }
 
+    public void updateCategory(Category category) {
+        this.categoryName = category.getCategoryName();
+        this.parentNo = category.getParentNo();
+        this.depth = category.getDepth();
+    }
+
 }

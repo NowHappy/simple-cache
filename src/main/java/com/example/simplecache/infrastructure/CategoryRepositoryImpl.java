@@ -1,8 +1,6 @@
 package com.example.simplecache.infrastructure;
 
 import com.example.simplecache.domain.Category;
-import com.example.simplecache.domain.Product;
-import com.example.simplecache.domain.QCategory;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
@@ -22,7 +20,8 @@ public class CategoryRepositoryImpl extends QuerydslRepositorySupport implements
     }
 
     @Override
-    public List<Product> findProductList() {
+    public List<Category> find() {
         return null;
     }
+
 }
